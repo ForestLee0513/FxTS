@@ -6,6 +6,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "ko"],
+  },
   title: "FxTS",
   tagline: "A functional library for TypeScript/JavaScript programmers.",
   url: "https://fxts.dev",
@@ -53,6 +57,10 @@ const config = {
           {
             href: "https://github.com/marpple/fxts",
             label: "GitHub",
+            position: "right",
+          },
+          {
+            type: "localeDropdown",
             position: "right",
           },
         ],
